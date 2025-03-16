@@ -1,0 +1,29 @@
+##OpenGL GLIB
+Ortho -5. 5.   -5. 5.
+LookAt 0 0 2  0 0 0  0 1 0
+
+Texture2D 8 sample1.bmp
+Texture2D 0 0.bmp
+Texture2D 1 1.bmp
+Texture2D 2 2.bmp
+Texture2D 3 3.bmp
+Texture2D 4 4.bmp
+Texture2D 5 5.bmp
+Texture2D 6 6.bmp
+Texture2D 7 7.bmp
+
+Vertex   ascii.vert
+Fragment ascii.frag
+Program  Ascii						\
+	uResolution <0.001 0.1 0.1>			\
+	uSprite0 0					\
+	uSprite1 1					\
+	uSprite2 2					\
+	uSprite3 3					\
+	uSprite4 4					\
+	uSprite5 5					\
+	uSprite6 6					\
+	uSprite7 7					\
+	uBaseImage  8
+
+QuadXY .1 5.
