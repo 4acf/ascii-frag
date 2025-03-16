@@ -1,4 +1,3 @@
-// make this 120 for the mac:
 #version 330 compatibility
 
 uniform float uResolution;
@@ -12,7 +11,7 @@ uniform sampler2D uSprite5;
 uniform sampler2D uSprite6;
 uniform sampler2D uSprite7;
 
-in  vec2  vST;		   // (s,t) texture coordinates
+in  vec2  vST;
 
 bool isPixelWhite(int octave, vec2 spriteST){
 
@@ -79,8 +78,6 @@ void main( ) {
 		gl_FragColor = vec4(pixelColor, 1.);
 	else
 		gl_FragColor = vec4(0., 0., 0., 1.);
-
-	//gl_FragColor = vec4(luminance, luminance, luminance, 1.);
 
 }
 
